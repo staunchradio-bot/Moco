@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友物件練習</title>
+</head>
+<body>
+    <h1>朋友物件練習</h1>
+
+    <script>
+        // 第一步：建立一個空陣列
+        let friends = [];
+
+        // 第二步：建立3個朋友物件
+        let friend1 = {
+            name: '陳大同',
+            age: 26,
+            hobbies: ['爬山', '看電影', '煮咖啡'],
+            contact: {
+                phone: '0912345678',
+                email: 'datong@example.com'
+            }
+        };
+
+        let friend2 = {
+            name: '林小美',
+            age: 24,
+            hobbies: ['閱讀', '瑜珈', '旅行'],
+            contact: {
+                phone: '0923456789',
+                email: 'xiaomei@example.com'
+            }
+        };
+
+        let friend3 = {
+            name: '王大明',
+            age: 28,
+            hobbies: ['攝影', '騎車', '烹飪'],
+            contact: {
+                phone: '0934567890',
+                email: 'daming@example.com'
+            }
+        };
+
+        // 第三步：用 push 將3個朋友物件加入 friends 陣列
+        friends.push(friend1);
+        friends.push(friend2);
+        friends.push(friend3);
+
+        // 第四步：完成以下要求
+        // 印出第二個朋友的名字
+        console.log(friends[1].name);
+
+        // 印出第一個朋友的第三個興趣
+        console.log(friends[0].hobbies[2]);
+
+        // 印出第三個朋友的Email
+        console.log(friends[2].contact.email);
+
+        // 為第二個朋友新增一個興趣「游泳」
+        friends[1].hobbies.push('游泳');
+    </script>
+</body>
+</html>
